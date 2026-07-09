@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Fri Jun 26 22:12:39 2026
+# Process ID: 6192
+# Current directory: C:/Users/gm/Vivado Projects/complete_det_pre_comblock/complete_det_pre_comblock.runs/xfft_1_synth_1
+# Command line: vivado.exe -log xfft_1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source xfft_1.tcl
+# Log file: C:/Users/gm/Vivado Projects/complete_det_pre_comblock/complete_det_pre_comblock.runs/xfft_1_synth_1/xfft_1.vds
+# Journal file: C:/Users/gm/Vivado Projects/complete_det_pre_comblock/complete_det_pre_comblock.runs/xfft_1_synth_1\vivado.jou
+# Running On: Geronimo, OS: Windows, CPU Frequency: 2496 MHz, CPU Physical cores: 6, Host memory: 16961 MB
+#-----------------------------------------------------------
+source xfft_1.tcl -notrace
