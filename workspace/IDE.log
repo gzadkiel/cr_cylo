@@ -1,0 +1,63 @@
+23:15:57 DEBUG : Logs will be stored at 'C:/Users/gm/wokspace_final/IDE.log'.
+23:16:07 INFO  : Registering command handlers for Vitis TCF services
+23:16:07 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\gm\wokspace_final\temp_xsdb_launch_script.tcl
+23:16:07 INFO  : Platform repository initialization has completed.
+23:16:10 INFO  : XSCT server has started successfully.
+23:16:12 INFO  : Successfully done setting XSCT server connection channel  
+23:16:12 INFO  : plnx-install-location is set to ''
+23:16:12 INFO  : Successfully done query RDI_DATADIR 
+23:16:12 INFO  : Successfully done setting workspace for the tool. 
+23:16:46 INFO  : Result from executing command 'getProjects': top
+23:16:46 INFO  : Result from executing command 'getPlatforms': xilinx_zcu102_base_202310_1|C:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_202310_1/xilinx_zcu102_base_202310_1.xpfm;xilinx_zcu102_base_dfx_202310_1|C:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_dfx_202310_1/xilinx_zcu102_base_dfx_202310_1.xpfm;xilinx_zcu104_base_202310_1|C:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu104_base_202310_1/xilinx_zcu104_base_202310_1.xpfm
+23:16:46 WARN  : An unexpected exception occurred in the module 'platform project logging'
+23:16:47 INFO  : Platform 'top' is added to custom repositories.
+23:16:55 INFO  : Platform 'top' is added to custom repositories.
+23:17:56 INFO  : Result from executing command 'getProjects': top
+23:17:56 INFO  : Result from executing command 'getPlatforms': top|C:/Users/gm/wokspace_final/top/export/top/top.xpfm;xilinx_zcu102_base_202310_1|C:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_202310_1/xilinx_zcu102_base_202310_1.xpfm;xilinx_zcu102_base_dfx_202310_1|C:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_dfx_202310_1/xilinx_zcu102_base_dfx_202310_1.xpfm;xilinx_zcu104_base_202310_1|C:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu104_base_202310_1/xilinx_zcu104_base_202310_1.xpfm
+23:17:57 INFO  : Checking for BSP changes to sync application flags for project 'test_final'...
+23:19:16 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:19:16 INFO  : Jtag cable 'Digilent Zed 210248772772' is selected.
+23:19:16 INFO  : 'jtag frequency' command is executed.
+23:19:16 INFO  : Context for 'APU' is selected.
+23:19:16 INFO  : System reset is completed.
+23:19:19 INFO  : 'after 3000' command is executed.
+23:19:20 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248772772" && level==0 && jtag_device_ctx=="jsn-Zed-210248772772-23727093-0"}' command is executed.
+23:19:22 INFO  : Device configured successfully with "C:/Users/gm/wokspace_final/test_final/_ide/bitstream/top.bit"
+23:19:22 INFO  : Context for 'APU' is selected.
+23:19:22 INFO  : Hardware design and registers information is loaded from 'C:/Users/gm/wokspace_final/top/export/top/hw/top.xsa'.
+23:19:22 INFO  : 'configparams force-mem-access 1' command is executed.
+23:19:22 INFO  : Context for 'APU' is selected.
+23:19:22 INFO  : Sourcing of 'C:/Users/gm/wokspace_final/test_final/_ide/psinit/ps7_init.tcl' is done.
+23:19:22 INFO  : 'ps7_init' command is executed.
+23:19:22 INFO  : 'ps7_post_config' command is executed.
+23:19:22 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:19:22 INFO  : The application 'C:/Users/gm/wokspace_final/test_final/Debug/test_final.elf' is downloaded to processor 'ps7_cortexa9_0'.
+23:19:23 INFO  : 'configparams force-mem-access 0' command is executed.
+23:19:23 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248772772" && level==0 && jtag_device_ctx=="jsn-Zed-210248772772-23727093-0"}
+fpga -file C:/Users/gm/wokspace_final/test_final/_ide/bitstream/top.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/gm/wokspace_final/top/export/top/hw/top.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/gm/wokspace_final/test_final/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/gm/wokspace_final/test_final/Debug/test_final.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+23:19:23 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:19:23 INFO  : 'con' command is executed.
+23:19:23 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+23:19:23 INFO  : Launch script is exported to file 'C:\Users\gm\wokspace_final\test_final_system\_ide\scripts\debugger_test_final-default.tcl'
+23:28:37 INFO  : Disconnected from the channel tcfchan#3.
