@@ -14,17 +14,7 @@ The **FFT Accumulation Method (FAM)** is one of the most widely used efficient a
 
 ---
 
-## 2. Project Goals
-
-- Implement the FAM/SCD estimation pipeline as synthesizable RTL targeting a Xilinx Zynq-7000 SoC (ZedBoard, XC7Z020).
-- Build a Python **golden model** of the same pipeline for verification and algorithm development.
-- Validate the RTL against the golden model at each pipeline stage (vector-level matching) and at the system level (end-to-end SCD comparison).
-- Characterize detector performance empirically via **Monte Carlo simulation**, including detection threshold estimation under the noise-only hypothesis (H₀) and probability-of-detection (Pd) measurement under signal-present conditions.
-- Deploy and exercise the design on real ZedBoard hardware, with a host-side (PS/Python) control and data-acquisition path for automated trial orchestration.
-
----
-
-## 3. Repository Structure
+## 2. Repository Structure
 
 ```
 cr_cylo/
@@ -38,7 +28,7 @@ cr_cylo/
 
 ---
 
-## 4. System Architecture
+## 3. System Architecture
 
 The detector pipeline follows the classical FAM structure, implemented as an FSM-controlled, multi-stage custom datapath (rather than a fully AXI-Stream-pipelined design — only the FFT cores and the complex multiplier use AXI-Stream interfaces; the rest of the pipeline is sequenced by dedicated control logic):
 
@@ -71,7 +61,7 @@ SCD output
 ```
 ---
 
-## 6. Hardware Deployment
+## 4. Hardware Deployment
 
 The design targets a **Xilinx ZedBoard (XC7Z020)**, using the Zynq **Processing System (PS)** as a bridge between a host PC and the **Programmable Logic (PL)** detector core:
 
@@ -81,7 +71,7 @@ The design targets a **Xilinx ZedBoard (XC7Z020)**, using the Zynq **Processing 
 
 ---
 
-## 7. Author / Thesis Context
+## 5. Author / Thesis Context
 
 This project is developed as an undergraduate/graduate thesis on FPGA-based cyclostationary spectrum sensing for Cognitive Radio applications. Additional thesis documentation (background theory, full results, and formal write-up) will be added as it becomes available.
 
