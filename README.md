@@ -71,36 +71,12 @@ SCD output
 ```
 ---
 
-## 5. Verification Methodology
-
-Verification follows a layered strategy combining Python-based modeling with SystemVerilog testbenches:
-
-### 5.1 Golden Model (Python)
-A Python golden model implements the FAM/SCD algorithm stage by stage and applies quantization to match the fixed-point behavior of the RTL — it is not a bit-accurate replica of the hardware, but an algorithmic model with quantization effects layered in for meaningful comparison. It dumps intermediate results (input frames, FFT1 output, phase-corrected data, conjugate products, full-resolution SCD, and reduced-depth SCD) for direct comparison against RTL simulation output.
-
-### 5.2 Module-Level Behavioral Emulation
-Individual SystemVerilog modules (e.g., the input windowing block) have matching Python behavioral models that replicate exact hardware semantics — including non-blocking assignment (NBA) timing, saturating truncation, and symmetric window-coefficient lookup — connected via a `tick(enable, data, ...) → (valid, data)` interface convention, allowing module-by-module chaining and validation in software before/alongside RTL simulation.
-
-### 5.3 Vector-Level Matching
-A SystemVerilog testbench monitor captures internal signals during Vivado simulation and compares them against the golden model's dumped vectors to catch discrepancies at each pipeline stage rather than only at the final output.
-
-### 5.4 Signal Validation
-Sine-wave and modulated (BPSK and QAM, rectangular and root-raised-cosine pulse shaping) test signals are used to validate correct SCD behavior, visualized via 2D SCD heatmaps, PSD slices, cyclic-power-vs-α plots, and per-pair FFT2 slices.
-
-### 5.5 Monte Carlo Threshold Estimation
-A dedicated Monte Carlo testbench environment drives the design with AWGN (Box-Muller-generated) under many independent trials to empirically characterize detector statistics:
-- Per-trial maximum-statistic export from RTL simulation.
-- Empirical CCDF construction, Gumbel tail fitting, and Kolmogorov–Smirnov goodness-of-fit testing.
-- Threshold tables (per target false-alarm probability).
-
----
-
 ## 6. Hardware Deployment
 
 The design targets a **Xilinx ZedBoard (XC7Z020)**, using the Zynq **Processing System (PS)** as a bridge between a host PC and the **Programmable Logic (PL)** detector core:
 
 - A UART-based relay firmware running on the PS implements a framed binary protocol (`[CMD][LEN_LO][LEN_HI][PAYLOAD]`) supporting register and FIFO read/write, FIFO status queries, and FIFO clearing.
-- A GUI supports configurable signal sources (BPSK, sine, AWGN, or file-based), automated trial execution, probability-of-detection (Pd) computation, and results export (`.npz`).
+- A GUI supports configurable signal sources (BPSK, sine, AWGN, or file-based), automated trial execution, probability-of-detection (Pd) computation, and results export.
 - Integrated an ICTP Core-ComBlock IP for PC↔FPGA communication over USB/UART, with a custom adapter bridging ComBlock signals to the detector's RTL ports.
 
 ---
