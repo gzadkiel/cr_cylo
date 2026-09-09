@@ -18,12 +18,10 @@ The **FFT Accumulation Method (FAM)** is one of the most widely used efficient a
 
 ```
 cr_cylo/
-├── app_gui_v20/                     # Testing GUI application
-├── complete_det_final/              # Final detector implementation (Vivado project, RTL, supporting files, etc.)
-├── complete_det_final_full_and_red/ # Final detector with additional estimation mode implementation (Vivado project, RTL, supporting files, etc.)
-├── files/                           # Supporting files (module documentation, scripts and reference material)
-├── workspace/                       # Development area for complete_det_final (Vitis project)
-├── workspace_placebo_2/             # Development area for complete_det_final_full_and_red (Vitis project)
+├── app_gui_v25/               # Testing GUI application
+├── complete_det_final_debug/  # Current version of the detector implementation (Vivado project, RTL, supporting files, etc.)
+├── old_ver/                   # Older project versions (with previous threshold values and unfixed bugs)
+├── workspace_debug/           # Application project workspace (Vitis project)
 └── README.md
 ```
 
