@@ -80,38 +80,11 @@ The system is organized around a custom RTL implementation of the **FFT Accumula
 
 ### FAM Processing Datapath
 
-The SCD estimator follows the classical FAM processing sequence:
-
-```text
-Input samples
-     │
-     ▼
-Input window
-     │
-     ▼
-FFT #1
-     │
-     ▼
-Memory reordering / transpose
-     │
-     ▼
-Phase correction
-     │
-     ▼
-Conjugate frequency-bin products
-     │
-     ▼
-FFT #2
-     │
-     ▼
-Spectral Correlation Density (SCD)
-```
-
-The implementation uses an **FSM-controlled multi-stage datapath** rather than a fully streaming architecture. Xilinx FFT and complex-multiplier IP cores use AXI-Stream interfaces internally, while custom control logic coordinates data movement, memory access, processing stages, and synchronization between blocks.
+The SCD estimator follows the classical FAM processing sequence. The implementation uses an **FSM-controlled multi-stage datapath** rather than a fully streaming architecture. Xilinx FFT and complex-multiplier IP cores use AXI-Stream interfaces internally, while custom control logic coordinates data movement, memory access, processing stages, and synchronization between blocks.
 
 The main hardware subsystems are:
 
-* **Input processing, windowing, and FFT #1:** frames the incoming samples, applies the selected analysis window, and computes the first-stage spectral representation.
+* **Input processing, windowing, and FFT #1:** frames the incoming samples, applies the selected window, and computes the first-stage spectral representation.
 * **Memory reordering:** stores intermediate FFT data using a column-write / row-read access pattern required by the FAM computation.
 * **Phase correction and conjugate-product stage:** compensates the phase offset introduced by the time-shifted input blocks and computes the required frequency-bin correlations.
 * **FFT #2:** transforms the accumulated correlation sequences along the cyclic-frequency dimension to obtain the SCD.
