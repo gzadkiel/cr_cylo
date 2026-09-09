@@ -31,36 +31,97 @@ cr_cylo/
 
 ## 3. System Architecture
 
-The detector pipeline follows the classical FAM structure, implemented as an FSM-controlled, multi-stage custom datapath (rather than a fully AXI-Stream-pipelined design — only the FFT cores and the complex multiplier use AXI-Stream interfaces; the rest of the pipeline is sequenced by dedicated control logic):
+The system is organized around a custom RTL implementation of the **FFT Accumulation Method (FAM)**, together with dedicated blocks for noise-power estimation, threshold selection, detection, control, and communication with the host PC. At a high level, the architecture can be divided into the following functional blocks:
 
+```text
+                         ┌──────────────────────┐
+                         │ Host PC              │ 
+                         │ Python GUI / Tests   │
+                         └──────────┬───────────┘
+                                    │ UART
+                                    ▼
+                         ┌──────────────────────┐
+                         │ Zynq Processing      │
+                         │ System (PS)          │
+                         │ Communication FW     │
+                         └──────────┬───────────┘
+                                    │
+                                    ▼
+                         ┌──────────────────────┐
+                         | ComBlock Interface   |
+                         └──────────┬───────────┘
+                                    │
+                                    ▼
+      ┌──────────────────────────────────────────────────────────────┐
+      │  Programmable Logic (PL)                                     │
+      │                                                              │
+      │  ┌───────────────────────┐                                   │
+      │  │ Input / Framing       │                                   │
+      │  │ Window + FFT #1       │                                   │
+      │  └───────────┬───────────┘                                   │
+      │              ▼                                               │
+      │  ┌───────────────────────┐                                   │
+      │  │ FAM Processing        │                                   │
+      │  │ Phase correction      │                                   │
+      │  │ Conjugate products    │                                   │
+      │  │ FFT #2                │                                   │
+      │  └───────────┬───────────┘                                   │
+      │              │ SCD                                           │
+      │              ▼                                               │
+      │  ┌───────────────────────┐      ┌─────────────────────────┐  │
+      │  │ Detection             │◄─────│ Threshold               │  │
+      │  │ Comparison            │      │ Noise Power Estimation  │  │
+      │  └───────────┬───────────┘      └─────────────────────────┘  │
+      │              │                                               │
+      │              ▼                                               │
+      │       Detection result                                       │
+      └──────────────────────────────────────────────────────────────┘
 ```
+
+### FAM Processing Datapath
+
+The SCD estimator follows the classical FAM processing sequence:
+
+```text
 Input samples
-   │
-   ▼
-Windowing (input framing + window function, e.g. Hamming/Blackman)
-   │
-   ▼
-BRAM buffer
-   │
-   ▼
-FFT #1 (per-block spectral estimate)
-   │
-   ▼
-BRAM transpose (column-write / row-read pattern)
-   │
-   ▼
+     │
+     ▼
+Input window
+     │
+     ▼
+FFT #1
+     │
+     ▼
+Memory reordering / transpose
+     │
+     ▼
 Phase correction
-   │
-   ▼
-Conjugate product (cross-multiplication of frequency-shifted pairs)
-   │
-   ▼
-FFT #2 (cyclic-frequency spectrum)
-   │
-   ▼
-SCD output
+     │
+     ▼
+Conjugate frequency-bin products
+     │
+     ▼
+FFT #2
+     │
+     ▼
+Spectral Correlation Density (SCD)
 ```
+
+The implementation uses an **FSM-controlled multi-stage datapath** rather than a fully streaming architecture. Xilinx FFT and complex-multiplier IP cores use AXI-Stream interfaces internally, while custom control logic coordinates data movement, memory access, processing stages, and synchronization between blocks.
+
+The main hardware subsystems are:
+
+* **Input processing, windowing, and FFT #1:** frames the incoming samples, applies the selected analysis window, and computes the first-stage spectral representation.
+* **Memory reordering:** stores intermediate FFT data using a column-write / row-read access pattern required by the FAM computation.
+* **Phase correction and conjugate-product stage:** compensates the phase offset introduced by the time-shifted input blocks and computes the required frequency-bin correlations.
+* **FFT #2:** transforms the accumulated correlation sequences along the cyclic-frequency dimension to obtain the SCD.
+* **Noise-power and threshold estimation:** estimates the received noise power during an \(H_0\) acquisition stage and derives the detection threshold corresponding to the selected probability of false alarm.
+* **Detection logic:** compares the resulting SCD values against the configured threshold and reports detected cyclostationary features.
+* **Control logic:** dedicated finite-state machines coordinate each processing stage and the overall noise-estimation/detection sequence.
+* **Host interface:** connects the detector to the Zynq Processing System, allowing samples, configuration parameters, commands, and results to be exchanged with the PC application.
+
 ---
+
 
 ## 4. Hardware Deployment
 
