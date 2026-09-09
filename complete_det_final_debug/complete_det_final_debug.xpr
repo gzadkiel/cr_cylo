@@ -103,14 +103,14 @@
         <CompFileExtendedInfo CompFileName="comblock_setup.bd" FileRelPathName="ip/comblock_setup_processing_system7_0_1/comblock_setup_processing_system7_0_1.xci">
           <Proxy FileSetName="comblock_setup_processing_system7_0_1"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="comblock_setup.bd" FileRelPathName="ip/comblock_setup_rst_ps7_0_100M_1/comblock_setup_rst_ps7_0_100M_1.xci">
-          <Proxy FileSetName="comblock_setup_rst_ps7_0_100M_1"/>
+        <CompFileExtendedInfo CompFileName="comblock_setup.bd" FileRelPathName="ip/comblock_setup_auto_pc_0/comblock_setup_auto_pc_0.xci">
+          <Proxy FileSetName="comblock_setup_auto_pc_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="comblock_setup.bd" FileRelPathName="ip/comblock_setup_comblock_0_0/comblock_setup_comblock_0_0.xci">
           <Proxy FileSetName="comblock_setup_comblock_0_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="comblock_setup.bd" FileRelPathName="ip/comblock_setup_auto_pc_0/comblock_setup_auto_pc_0.xci">
-          <Proxy FileSetName="comblock_setup_auto_pc_0"/>
+        <CompFileExtendedInfo CompFileName="comblock_setup.bd" FileRelPathName="ip/comblock_setup_rst_ps7_0_100M_1/comblock_setup_rst_ps7_0_100M_1.xci">
+          <Proxy FileSetName="comblock_setup_rst_ps7_0_100M_1"/>
         </CompFileExtendedInfo>
       </File>
       <File Path="$PSRCDIR/sources_1/ip/xfft_0/xfft_0.xci">
@@ -509,9 +509,7 @@
     </Run>
     <Run Id="comblock_setup_auto_pc_0_synth_1" Type="Ft3:Synth" SrcSet="comblock_setup_auto_pc_0" Part="xc7z020clg484-1" ConstrsSet="comblock_setup_auto_pc_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/comblock_setup_auto_pc_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/comblock_setup_auto_pc_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/comblock_setup_auto_pc_0_synth_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -641,9 +639,7 @@
     </Run>
     <Run Id="comblock_setup_auto_pc_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg484-1" ConstrsSet="comblock_setup_auto_pc_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="comblock_setup_auto_pc_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/comblock_setup_auto_pc_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/comblock_setup_auto_pc_0_impl_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>

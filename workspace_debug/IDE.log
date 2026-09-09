@@ -1,0 +1,35 @@
+10:56:51 DEBUG : Logs will be stored at 'C:/Users/gm/workspace_debug/IDE.log'.
+10:56:57 INFO  : Registering command handlers for Vitis TCF services
+10:56:57 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\gm\workspace_debug\temp_xsdb_launch_script.tcl
+10:56:58 INFO  : Platform repository initialization has completed.
+10:56:59 INFO  : XSCT server has started successfully.
+10:57:01 INFO  : plnx-install-location is set to ''
+10:57:01 INFO  : Successfully done setting XSCT server connection channel  
+10:57:01 INFO  : Successfully done query RDI_DATADIR 
+10:57:01 INFO  : Successfully done setting workspace for the tool. 
+10:57:35 INFO  : Result from executing command 'getProjects': top
+10:57:35 INFO  : Result from executing command 'getPlatforms': xilinx_zcu102_base_202310_1|C:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_202310_1/xilinx_zcu102_base_202310_1.xpfm;xilinx_zcu102_base_dfx_202310_1|C:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_dfx_202310_1/xilinx_zcu102_base_dfx_202310_1.xpfm;xilinx_zcu104_base_202310_1|C:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu104_base_202310_1/xilinx_zcu104_base_202310_1.xpfm
+10:57:35 WARN  : An unexpected exception occurred in the module 'platform project logging'
+10:57:35 INFO  : Platform 'top' is added to custom repositories.
+10:57:43 INFO  : Platform 'top' is added to custom repositories.
+10:58:32 INFO  : Result from executing command 'getProjects': top
+10:58:32 INFO  : Result from executing command 'getPlatforms': top|C:/Users/gm/workspace_debug/top/export/top/top.xpfm;xilinx_zcu102_base_202310_1|C:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_202310_1/xilinx_zcu102_base_202310_1.xpfm;xilinx_zcu102_base_dfx_202310_1|C:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_dfx_202310_1/xilinx_zcu102_base_dfx_202310_1.xpfm;xilinx_zcu104_base_202310_1|C:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu104_base_202310_1/xilinx_zcu104_base_202310_1.xpfm
+10:58:32 INFO  : Checking for BSP changes to sync application flags for project 'test_debug'...
+11:56:12 DEBUG : Logs will be stored at 'C:/Users/gm/workspace_debug/IDE.log'.
+11:56:13 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\gm\workspace_debug\temp_xsdb_launch_script.tcl
+11:56:16 INFO  : Platform repository initialization has completed.
+11:56:16 INFO  : XSCT server has started successfully.
+11:56:16 INFO  : plnx-install-location is set to ''
+11:56:16 INFO  : Successfully done setting XSCT server connection channel  
+11:56:16 INFO  : Successfully done setting workspace for the tool. 
+11:56:24 INFO  : Registering command handlers for Vitis TCF services
+11:56:25 INFO  : Successfully done query RDI_DATADIR 
+11:57:14 WARN  : An unexpected exception occurred in the module 'platform project logging'
+11:58:01 INFO  : Result from executing command 'getProjects': top
+11:58:01 INFO  : Result from executing command 'getPlatforms': xilinx_zcu102_base_202310_1|C:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_202310_1/xilinx_zcu102_base_202310_1.xpfm;xilinx_zcu102_base_dfx_202310_1|C:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_dfx_202310_1/xilinx_zcu102_base_dfx_202310_1.xpfm;xilinx_zcu104_base_202310_1|C:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu104_base_202310_1/xilinx_zcu104_base_202310_1.xpfm
+11:58:01 WARN  : An unexpected exception occurred in the module 'platform project logging'
+11:58:02 INFO  : Platform 'top' is added to custom repositories.
+11:58:09 INFO  : Platform 'top' is added to custom repositories.
+11:58:54 INFO  : Result from executing command 'getProjects': top
+11:58:54 INFO  : Result from executing command 'getPlatforms': top|C:/Users/gm/workspace_debug/top/export/top/top.xpfm;xilinx_zcu102_base_202310_1|C:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_202310_1/xilinx_zcu102_base_202310_1.xpfm;xilinx_zcu102_base_dfx_202310_1|C:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_dfx_202310_1/xilinx_zcu102_base_dfx_202310_1.xpfm;xilinx_zcu104_base_202310_1|C:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu104_base_202310_1/xilinx_zcu104_base_202310_1.xpfm
+11:58:55 INFO  : Checking for BSP changes to sync application flags for project 'test_debug'...

@@ -73,7 +73,7 @@ assign w_noise_sample_counter_next = (w_noise_sample_counter_clr) ? '0 : (w_nois
 assign w_noise_sample_counter_out  = (r_noise_sample_counter_reg == i_noise_size + 1) ? '1 : '0;
 
 assign w_scd_sample_counter_next = (w_scd_sample_counter_clr) ? '0 : (w_scd_sample_counter_inc) ? r_scd_sample_counter_reg + 1'b1 : r_scd_sample_counter_reg;
-assign w_scd_sample_counter_out1 = (r_scd_sample_counter_reg == i_data_size - 1) ? '1 : '0;
+assign w_scd_sample_counter_out1 = (r_scd_sample_counter_reg >= i_data_size - 1) ? '1 : '0;
 assign w_scd_sample_counter_out2 = (r_scd_sample_counter_reg == i_tot_data_size - 1) ? '1 : '0; 
 
 always_ff @(posedge clock) begin : regs_management 

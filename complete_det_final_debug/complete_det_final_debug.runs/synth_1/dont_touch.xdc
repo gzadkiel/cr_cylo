@@ -12,14 +12,14 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==comblock_se
 # IP: bd/comblock_setup/ip/comblock_setup_processing_system7_0_1/comblock_setup_processing_system7_0_1.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==comblock_setup_processing_system7_0_1 || ORIG_REF_NAME==comblock_setup_processing_system7_0_1} -quiet] -quiet
 
+# IP: bd/comblock_setup/ip/comblock_setup_auto_pc_0/comblock_setup_auto_pc_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==comblock_setup_auto_pc_0 || ORIG_REF_NAME==comblock_setup_auto_pc_0} -quiet] -quiet
+
 # IP: bd/comblock_setup/ip/comblock_setup_ps7_0_axi_periph_1/comblock_setup_ps7_0_axi_periph_1.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==comblock_setup_ps7_0_axi_periph_1 || ORIG_REF_NAME==comblock_setup_ps7_0_axi_periph_1} -quiet] -quiet
 
 # IP: bd/comblock_setup/ip/comblock_setup_rst_ps7_0_100M_1/comblock_setup_rst_ps7_0_100M_1.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==comblock_setup_rst_ps7_0_100M_1 || ORIG_REF_NAME==comblock_setup_rst_ps7_0_100M_1} -quiet] -quiet
-
-# IP: bd/comblock_setup/ip/comblock_setup_auto_pc_0/comblock_setup_auto_pc_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==comblock_setup_auto_pc_0 || ORIG_REF_NAME==comblock_setup_auto_pc_0} -quiet] -quiet
 
 # IP: ip/xfft_0/xfft_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==xfft_0 || ORIG_REF_NAME==xfft_0} -quiet] -quiet

@@ -113,10 +113,10 @@ read_verilog -library xil_defaultlib -sv {
 read_verilog -library xil_defaultlib {{C:/Users/gm/Vivado Projects/complete_det_final_debug/complete_det_final_debug.gen/sources_1/bd/comblock_setup/hdl/comblock_setup_wrapper.v}}
 add_files {{C:/Users/gm/Vivado Projects/complete_det_final_debug/complete_det_final_debug.srcs/sources_1/bd/comblock_setup/comblock_setup.bd}}
 set_property used_in_implementation false [get_files -all {{c:/Users/gm/Vivado Projects/complete_det_final_debug/complete_det_final_debug.gen/sources_1/bd/comblock_setup/ip/comblock_setup_processing_system7_0_1/comblock_setup_processing_system7_0_1.xdc}}]
+set_property used_in_implementation false [get_files -all {{c:/Users/gm/Vivado Projects/complete_det_final_debug/complete_det_final_debug.gen/sources_1/bd/comblock_setup/ip/comblock_setup_auto_pc_0/comblock_setup_auto_pc_0_ooc.xdc}}]
 set_property used_in_implementation false [get_files -all {{c:/Users/gm/Vivado Projects/complete_det_final_debug/complete_det_final_debug.gen/sources_1/bd/comblock_setup/ip/comblock_setup_rst_ps7_0_100M_1/comblock_setup_rst_ps7_0_100M_1_board.xdc}}]
 set_property used_in_implementation false [get_files -all {{c:/Users/gm/Vivado Projects/complete_det_final_debug/complete_det_final_debug.gen/sources_1/bd/comblock_setup/ip/comblock_setup_rst_ps7_0_100M_1/comblock_setup_rst_ps7_0_100M_1.xdc}}]
 set_property used_in_implementation false [get_files -all {{c:/Users/gm/Vivado Projects/complete_det_final_debug/complete_det_final_debug.gen/sources_1/bd/comblock_setup/ip/comblock_setup_rst_ps7_0_100M_1/comblock_setup_rst_ps7_0_100M_1_ooc.xdc}}]
-set_property used_in_implementation false [get_files -all {{c:/Users/gm/Vivado Projects/complete_det_final_debug/complete_det_final_debug.gen/sources_1/bd/comblock_setup/ip/comblock_setup_auto_pc_0/comblock_setup_auto_pc_0_ooc.xdc}}]
 set_property used_in_implementation false [get_files -all {{c:/Users/gm/Vivado Projects/complete_det_final_debug/complete_det_final_debug.gen/sources_1/bd/comblock_setup/comblock_setup_ooc.xdc}}]
 
 read_ip -quiet {{C:/Users/gm/Vivado Projects/complete_det_final_debug/complete_det_final_debug.srcs/sources_1/ip/xfft_0/xfft_0.xci}}

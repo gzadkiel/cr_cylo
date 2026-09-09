@@ -62,7 +62,7 @@ assign r_p_frames = i_data_size >> L_DIV;
 
 logic [$clog2(N_DESIRED) : 0] r_n_tot;
 // N_TOT = (P_FRAMES - 1)*L + NP_SAMPLES number of total samples required
-assign r_n_tot = ((r_p_frames - 1'b1) << L_DIV) + 11'b00001000000; 
+assign r_n_tot = ((r_p_frames - 1'b1) << L_DIV) + 11'b00000100000;  
 //==============================================================================
 
 //==============================================================================

@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="cmpy_0_synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1788442864">
   <File Type="PA-TCL" Name="cmpy_0.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="cmpy_0_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="cmpy_0_reports.tcl"/>
   <File Type="RDS-RDS" Name="cmpy_0.vds"/>
   <File Type="RDS-UTIL" Name="cmpy_0_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="cmpy_0_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="cmpy_0.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="cmpy_0_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="cmpy_0_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/cmpy_0" RelGenDir="$PGENDIR/cmpy_0">
     <File Path="$PSRCDIR/sources_1/ip/cmpy_0/cmpy_0.xci">
       <FileInfo>
