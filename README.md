@@ -101,7 +101,7 @@ The main hardware subsystems are:
 The design targets a **Xilinx ZedBoard (XC7Z020)**, using the Zynq **Processing System (PS)** as a bridge between a host PC and the **Programmable Logic (PL)** detector core:
 
 - A UART-based relay firmware running on the PS implements a framed binary protocol (`[CMD][LEN_LO][LEN_HI][PAYLOAD]`) supporting register and FIFO read/write, FIFO status queries, and FIFO clearing.
-- A GUI supports configurable signal sources (BPSK, sine, AWGN, or file-based), automated trial execution, probability-of-detection (Pd) computation, and results export.
+- A GUI supports configurable signal sources (BPSK, QAM, AWGN, or file-based), automated trial execution, probability-of-detection (Pd) computation, and results export.
 - Integrated an ICTP Core-ComBlock IP for PC↔FPGA communication over USB/UART, with a custom adapter bridging ComBlock signals to the detector's RTL ports.
 
 ---
