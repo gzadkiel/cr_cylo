@@ -1,0 +1,16 @@
+Time resolution is 1 ps
+[3906000] Threshold estimation complete
+       noise power = 286794
+       threshold   = 629436872483947
+[3933000] First stage ready for input samples
+       P frames           = 128
+       external samples   = 1024
+       internal N_tot     = 1048
+       internal zero pad  = 24
+[10763000] Internal zero-padding phase started
+[120496000] Detection complete
+       detections = 2
+       error      = 1
+WARNING: DUT asserted o_error during the run.
+$finish called at time : 120522710 ps : File "C:/Users/gm/Vivado Projects/complete_det_modded_turbo/complete_det_modded_turbo.srcs/sim_1/new/fam_detector_top_tb.sv" Line 295
+INFO: xsimkernel Simulation Memory Usage: 159568 KB (Peak: 159568 KB), Simulation CPU Usage: 279437 ms

@@ -1,0 +1,28 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  --include "../../../../complete_det_modded_turbo.gen/sources_1/bd/ps_comblock_setup/ipshared/ec67/hdl" --include "../../../../complete_det_modded_turbo.gen/sources_1/bd/ps_comblock_setup/ipshared/aed8/hdl" --include "C:/Xilinx/Vivado/2023.1/data/xilinx_vip/include" \
+"../../../../complete_det_modded_turbo.srcs/sources_1/new/cmult2_resize_parallel.sv" \
+"../../../../complete_det_modded_turbo.srcs/sources_1/new/detection_compare_parallel.sv" \
+"../../../../complete_det_modded_turbo.srcs/sources_1/new/fam_detector_top.sv" \
+"../../../../complete_det_modded_turbo.srcs/sources_1/new/fft2_bin_filter_parallel.sv" \
+"../../../../complete_det_modded_turbo.srcs/sources_1/new/fft2_config_parallel.sv" \
+"../../../../complete_det_modded_turbo.srcs/sources_1/new/noise_calc.sv" \
+"../../../../complete_det_modded_turbo.srcs/sources_1/new/op_first_stage_fsmd.sv" \
+"../../../../complete_det_modded_turbo.srcs/sources_1/new/op_first_stage_wrapper.sv" \
+"../../../../complete_det_modded_turbo.srcs/sources_1/new/op_input_window_pipelined.sv" \
+"../../../../complete_det_modded_turbo.srcs/sources_1/new/phase_corrector_4lane.sv" \
+"../../../../complete_det_modded_turbo.srcs/sources_1/new/phase_corrector_stream.sv" \
+"../../../../complete_det_modded_turbo.srcs/sources_1/new/scd_fft1_bank_tdp_ram.sv" \
+"../../../../complete_det_modded_turbo.srcs/sources_1/new/scd_fft1_store_banked.sv" \
+"../../../../complete_det_modded_turbo.srcs/sources_1/new/scd_pair_streamer_parallel.sv" \
+"../../../../complete_det_modded_turbo.srcs/sources_1/new/second_stage_controller.sv" \
+"../../../../complete_det_modded_turbo.srcs/sources_1/new/second_stage_wrapper.sv" \
+"../../../../complete_det_modded_turbo.srcs/sources_1/new/squarediffmacc_mod.sv" \
+"../../../../complete_det_modded_turbo.srcs/sources_1/new/threshold_calculator.sv" \
+"../../../../complete_det_modded_turbo.srcs/sources_1/new/threshold_rom.sv" \
+"../../../../complete_det_modded_turbo.srcs/sim_1/new/fam_detector_top_tb.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

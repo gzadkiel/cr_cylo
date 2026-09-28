@@ -1,0 +1,40 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/gm/Vivado Projects/complete_det_modded_turbo/complete_det_modded_turbo.srcs/sources_1/new/cmult2_resize_parallel.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cmult2_resize_parallel
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/gm/Vivado Projects/complete_det_modded_turbo/complete_det_modded_turbo.srcs/sources_1/new/detection_compare_parallel.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module detection_compare_parallel
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/gm/Vivado Projects/complete_det_modded_turbo/complete_det_modded_turbo.srcs/sources_1/new/fam_detector_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fam_detector_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/gm/Vivado Projects/complete_det_modded_turbo/complete_det_modded_turbo.srcs/sources_1/new/fft2_bin_filter_parallel.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fft2_bin_filter_parallel
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/gm/Vivado Projects/complete_det_modded_turbo/complete_det_modded_turbo.srcs/sources_1/new/fft2_config_parallel.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fft2_config_parallel
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/gm/Vivado Projects/complete_det_modded_turbo/complete_det_modded_turbo.srcs/sources_1/new/noise_calc.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module noise_calc
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/gm/Vivado Projects/complete_det_modded_turbo/complete_det_modded_turbo.srcs/sources_1/new/op_first_stage_fsmd.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module first_stage_fsmd_4fft_no_ram
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/gm/Vivado Projects/complete_det_modded_turbo/complete_det_modded_turbo.srcs/sources_1/new/op_first_stage_wrapper.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module first_stage_wrapper
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/gm/Vivado Projects/complete_det_modded_turbo/complete_det_modded_turbo.srcs/sources_1/new/op_input_window_pipelined.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module input_window_pipelined
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/gm/Vivado Projects/complete_det_modded_turbo/complete_det_modded_turbo.srcs/sources_1/new/phase_corrector_4lane.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module phase_corrector_4lane
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/gm/Vivado Projects/complete_det_modded_turbo/complete_det_modded_turbo.srcs/sources_1/new/phase_corrector_stream.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module phase_corrector_stream
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/gm/Vivado Projects/complete_det_modded_turbo/complete_det_modded_turbo.srcs/sources_1/new/scd_fft1_bank_tdp_ram.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module scd_fft1_bank_tdp_ram
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/gm/Vivado Projects/complete_det_modded_turbo/complete_det_modded_turbo.srcs/sources_1/new/scd_fft1_store_banked.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module scd_fft1_store_banked
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/gm/Vivado Projects/complete_det_modded_turbo/complete_det_modded_turbo.srcs/sources_1/new/scd_pair_streamer_parallel.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module scd_pair_streamer_parallel
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/gm/Vivado Projects/complete_det_modded_turbo/complete_det_modded_turbo.srcs/sources_1/new/second_stage_controller.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module second_stage_controller
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/gm/Vivado Projects/complete_det_modded_turbo/complete_det_modded_turbo.srcs/sources_1/new/second_stage_wrapper.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module second_stage_wrapper
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/gm/Vivado Projects/complete_det_modded_turbo/complete_det_modded_turbo.srcs/sources_1/new/squarediffmacc_mod.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module squarediffmacc_mod
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/gm/Vivado Projects/complete_det_modded_turbo/complete_det_modded_turbo.srcs/sources_1/new/threshold_calculator.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module threshold_calculator
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/gm/Vivado Projects/complete_det_modded_turbo/complete_det_modded_turbo.srcs/sources_1/new/threshold_rom.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module threshold_rom
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/gm/Vivado Projects/complete_det_modded_turbo/complete_det_modded_turbo.srcs/sim_1/new/fam_detector_top_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fam_detector_top_tb

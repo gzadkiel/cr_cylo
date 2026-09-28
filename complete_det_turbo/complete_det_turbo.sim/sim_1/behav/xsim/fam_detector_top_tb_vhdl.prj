@@ -1,0 +1,8 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../complete_det_modded_turbo.gen/sources_1/ip/xfft_1/sim/xfft_1.vhd" \
+"../../../../complete_det_modded_turbo.gen/sources_1/ip/cmpy_0/sim/cmpy_0.vhd" \
+"../../../../complete_det_modded_turbo.gen/sources_1/ip/xfft_0/sim/xfft_0.vhd" \
+
+# Do not sort compile order
+nosort

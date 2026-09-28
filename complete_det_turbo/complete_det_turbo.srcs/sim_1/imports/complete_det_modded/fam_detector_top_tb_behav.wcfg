@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="fam_detector_top_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="fam_detector_top_tb" />
+            <top_module name="glbl" />
+            <top_module name="vcomponents" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="15,390.100 ns"></ZoomStartTime>
+      <ZoomEndTime time="15,457.001 ns"></ZoomEndTime>
+      <Cursor1Time time="15,401.250 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="209"></NameColumnWidth>
+      <ValueColumnWidth column_width="153"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="111" />
+   <wvobject fp_name="/fam_detector_top_tb/clock" type="logic">
+      <obj_property name="ElementShortName">clock</obj_property>
+      <obj_property name="ObjectShortName">clock</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fam_detector_top_tb/i_reset" type="logic">
+      <obj_property name="ElementShortName">i_reset</obj_property>
+      <obj_property name="ObjectShortName">i_reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fam_detector_top_tb/i_enable" type="logic">
+      <obj_property name="ElementShortName">i_enable</obj_property>
+      <obj_property name="ObjectShortName">i_enable</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fam_detector_top_tb/i_noise_data_valid" type="logic">
+      <obj_property name="ElementShortName">i_noise_data_valid</obj_property>
+      <obj_property name="ObjectShortName">i_noise_data_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fam_detector_top_tb/i_signal_data_valid" type="logic">
+      <obj_property name="ElementShortName">i_signal_data_valid</obj_property>
+      <obj_property name="ObjectShortName">i_signal_data_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fam_detector_top_tb/i_window_sel" type="array">
+      <obj_property name="ElementShortName">i_window_sel[1:0]</obj_property>
+      <obj_property name="ObjectShortName">i_window_sel[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fam_detector_top_tb/i_data_size" type="array">
+      <obj_property name="ElementShortName">i_data_size[10:0]</obj_property>
+      <obj_property name="ObjectShortName">i_data_size[10:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fam_detector_top_tb/i_noise_size" type="array">
+      <obj_property name="ElementShortName">i_noise_size[10:0]</obj_property>
+      <obj_property name="ObjectShortName">i_noise_size[10:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fam_detector_top_tb/i_data_re" type="array">
+      <obj_property name="ElementShortName">i_data_re[11:0]</obj_property>
+      <obj_property name="ObjectShortName">i_data_re[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fam_detector_top_tb/i_data_im" type="array">
+      <obj_property name="ElementShortName">i_data_im[11:0]</obj_property>
+      <obj_property name="ObjectShortName">i_data_im[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fam_detector_top_tb/i_pfa_value" type="array">
+      <obj_property name="ElementShortName">i_pfa_value[3:0]</obj_property>
+      <obj_property name="ObjectShortName">i_pfa_value[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fam_detector_top_tb/i_scd_mode" type="logic">
+      <obj_property name="ElementShortName">i_scd_mode</obj_property>
+      <obj_property name="ObjectShortName">i_scd_mode</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fam_detector_top_tb/o_threshold" type="array">
+      <obj_property name="ElementShortName">o_threshold[64:0]</obj_property>
+      <obj_property name="ObjectShortName">o_threshold[64:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">62</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fam_detector_top_tb/o_noise_pow" type="array">
+      <obj_property name="ElementShortName">o_noise_pow[33:0]</obj_property>
+      <obj_property name="ObjectShortName">o_noise_pow[33:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">18</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fam_detector_top_tb/o_detect" type="array">
+      <obj_property name="ElementShortName">o_detect[15:0]</obj_property>
+      <obj_property name="ObjectShortName">o_detect[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fam_detector_top_tb/o_detection_done" type="logic">
+      <obj_property name="ElementShortName">o_detection_done</obj_property>
+      <obj_property name="ObjectShortName">o_detection_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fam_detector_top_tb/o_threshold_est_done" type="logic">
+      <obj_property name="ElementShortName">o_threshold_est_done</obj_property>
+      <obj_property name="ObjectShortName">o_threshold_est_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fam_detector_top_tb/o_error" type="logic">
+      <obj_property name="ElementShortName">o_error</obj_property>
+      <obj_property name="ObjectShortName">o_error</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fam_detector_top_tb/i" type="array">
+      <obj_property name="ElementShortName">i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fam_detector_top_tb/signal_idx" type="array">
+      <obj_property name="ElementShortName">signal_idx[31:0]</obj_property>
+      <obj_property name="ObjectShortName">signal_idx[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider58">
+      <obj_property name="label">FIRST_STAGE</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider67">
+      <obj_property name="label">WINDOW</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fam_detector_top_tb/dut/u_first_stage/u_input_window_re/i_x" type="array">
+      <obj_property name="ElementShortName">i_x[11:0]</obj_property>
+      <obj_property name="ObjectShortName">i_x[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fam_detector_top_tb/dut/u_first_stage/u_input_window_re/r_shiftreg" type="array">
+      <obj_property name="ElementShortName">r_shiftreg[0:31][11:0]</obj_property>
+      <obj_property name="ObjectShortName">r_shiftreg[0:31][11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fam_detector_top_tb/dut/u_first_stage/w_window_prod_re" type="array">
+      <obj_property name="ElementShortName">w_window_prod_re[0:31][15:0]</obj_property>
+      <obj_property name="ObjectShortName">w_window_prod_re[0:31][15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fam_detector_top_tb/dut/u_first_stage/w_window_prod_valid_re" type="logic">
+      <obj_property name="ElementShortName">w_window_prod_valid_re</obj_property>
+      <obj_property name="ObjectShortName">w_window_prod_valid_re</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fam_detector_top_tb/dut/u_first_stage/u_input_window_im/i_x" type="array">
+      <obj_property name="ElementShortName">i_x[11:0]</obj_property>
+      <obj_property name="ObjectShortName">i_x[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fam_detector_top_tb/dut/u_first_stage/u_input_window_im/r_shiftreg" type="array">
+      <obj_property name="ElementShortName">r_shiftreg[0:31][11:0]</obj_property>
+      <obj_property name="ObjectShortName">r_shiftreg[0:31][11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fam_detector_top_tb/dut/u_first_stage/w_window_prod_im" type="array">
+      <obj_property name="ElementShortName">w_window_prod_im[0:31][15:0]</obj_property>
+      <obj_property name="ObjectShortName">w_window_prod_im[0:31][15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fam_detector_top_tb/dut/u_first_stage/w_window_prod_valid_im" type="logic">
+      <obj_property name="ElementShortName">w_window_prod_valid_im</obj_property>
+      <obj_property name="ObjectShortName">w_window_prod_valid_im</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider68">
+      <obj_property name="label">FFT1</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fam_detector_top_tb/dut/u_first_stage/u_first_stage_fsmd/r_fft_sel" type="array">
+      <obj_property name="ElementShortName">r_fft_sel[1:0]</obj_property>
+      <obj_property name="ObjectShortName">r_fft_sel[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fam_detector_top_tb/dut/u_first_stage/u_first_stage_fsmd/w_window_frame_valid" type="logic">
+      <obj_property name="ElementShortName">w_window_frame_valid</obj_property>
+      <obj_property name="ObjectShortName">w_window_frame_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fam_detector_top_tb/dut/u_first_stage/u_first_stage_fsmd/i_s_axis_data_tready" type="array">
+      <obj_property name="ElementShortName">i_s_axis_data_tready[0:3]</obj_property>
+      <obj_property name="ObjectShortName">i_s_axis_data_tready[0:3]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fam_detector_top_tb/dut/u_first_stage/u_first_stage_fsmd/r_fft_index" type="array">
+      <obj_property name="ElementShortName">r_fft_index[0:3][4:0]</obj_property>
+      <obj_property name="ObjectShortName">r_fft_index[0:3][4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fam_detector_top_tb/dut/u_first_stage/o_frame_overflow" type="logic">
+      <obj_property name="ElementShortName">o_frame_overflow</obj_property>
+      <obj_property name="ObjectShortName">o_frame_overflow</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fam_detector_top_tb/dut/u_first_stage/w_fft1_any_input_halt" type="logic">
+      <obj_property name="ElementShortName">w_fft1_any_input_halt</obj_property>
+      <obj_property name="ObjectShortName">w_fft1_any_input_halt</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fam_detector_top_tb/dut/u_first_stage/w_fft1_any_output_backpressure" type="logic">
+      <obj_property name="ElementShortName">w_fft1_any_output_backpressure</obj_property>
+      <obj_property name="ObjectShortName">w_fft1_any_output_backpressure</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fam_detector_top_tb/dut/u_first_stage/u_first_stage_fsmd/r_fft_buffer" type="array">
+      <obj_property name="ElementShortName">r_fft_buffer[0:3][0:31][31:0]</obj_property>
+      <obj_property name="ObjectShortName">r_fft_buffer[0:3][0:31][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fam_detector_top_tb/dut/u_first_stage/u_first_stage_fsmd/r_fft_data" type="array">
+      <obj_property name="ElementShortName">r_fft_data[0:3][31:0]</obj_property>
+      <obj_property name="ObjectShortName">r_fft_data[0:3][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fam_detector_top_tb/dut/u_first_stage/u_first_stage_fsmd/r_fft_sel" type="array">
+      <obj_property name="ElementShortName">r_fft_sel[1:0]</obj_property>
+      <obj_property name="ObjectShortName">r_fft_sel[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fam_detector_top_tb/dut/u_first_stage/u_first_stage_fsmd/o_s_axis_data_tdata" type="array">
+      <obj_property name="ElementShortName">o_s_axis_data_tdata[0:3][31:0]</obj_property>
+      <obj_property name="ObjectShortName">o_s_axis_data_tdata[0:3][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fam_detector_top_tb/dut/u_first_stage/u_first_stage_fsmd/o_s_axis_data_tvalid" type="array">
+      <obj_property name="ElementShortName">o_s_axis_data_tvalid[0:3]</obj_property>
+      <obj_property name="ObjectShortName">o_s_axis_data_tvalid[0:3]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fam_detector_top_tb/dut/u_first_stage/u_first_stage_fsmd/o_s_axis_data_tlast" type="array">
+      <obj_property name="ElementShortName">o_s_axis_data_tlast[0:3]</obj_property>
+      <obj_property name="ObjectShortName">o_s_axis_data_tlast[0:3]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fam_detector_top_tb/dut/u_first_stage/o_fft1_m_axis_data_tdata" type="array">
+      <obj_property name="ElementShortName">o_fft1_m_axis_data_tdata[0:3][31:0]</obj_property>
+      <obj_property name="ObjectShortName">o_fft1_m_axis_data_tdata[0:3][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fam_detector_top_tb/dut/u_first_stage/o_fft1_m_axis_data_tvalid" type="array">
+      <obj_property name="ElementShortName">o_fft1_m_axis_data_tvalid[0:3]</obj_property>
+      <obj_property name="ObjectShortName">o_fft1_m_axis_data_tvalid[0:3]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fam_detector_top_tb/dut/u_first_stage/o_fft1_m_axis_data_tlast" type="array">
+      <obj_property name="ElementShortName">o_fft1_m_axis_data_tlast[0:3]</obj_property>
+      <obj_property name="ObjectShortName">o_fft1_m_axis_data_tlast[0:3]</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider319">
+      <obj_property name="label">PHASE_COMP</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fam_detector_top_tb/dut/u_second_stage/u_phase_corrector/i_s_axis_tdata" type="array">
+      <obj_property name="ElementShortName">i_s_axis_tdata[0:3][31:0]</obj_property>
+      <obj_property name="ObjectShortName">i_s_axis_tdata[0:3][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fam_detector_top_tb/dut/u_second_stage/u_phase_corrector/i_s_axis_tvalid" type="array">
+      <obj_property name="ElementShortName">i_s_axis_tvalid[0:3]</obj_property>
+      <obj_property name="ObjectShortName">i_s_axis_tvalid[0:3]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fam_detector_top_tb/dut/u_second_stage/u_phase_corrector/i_s_axis_tlast" type="array">
+      <obj_property name="ElementShortName">i_s_axis_tlast[0:3]</obj_property>
+      <obj_property name="ObjectShortName">i_s_axis_tlast[0:3]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fam_detector_top_tb/dut/u_second_stage/u_phase_corrector/o_m_axis_tdata" type="array">
+      <obj_property name="ElementShortName">o_m_axis_tdata[0:3][31:0]</obj_property>
+      <obj_property name="ObjectShortName">o_m_axis_tdata[0:3][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fam_detector_top_tb/dut/u_second_stage/u_phase_corrector/o_m_axis_tvalid" type="array">
+      <obj_property name="ElementShortName">o_m_axis_tvalid[0:3]</obj_property>
+      <obj_property name="ObjectShortName">o_m_axis_tvalid[0:3]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fam_detector_top_tb/dut/u_second_stage/u_phase_corrector/o_m_axis_tlast" type="array">
+      <obj_property name="ElementShortName">o_m_axis_tlast[0:3]</obj_property>
+      <obj_property name="ObjectShortName">o_m_axis_tlast[0:3]</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider366">
+      <obj_property name="label">STORE</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fam_detector_top_tb/dut/u_second_stage/w_bank_rd_en" type="array">
+      <obj_property name="ElementShortName">w_bank_rd_en[0:3]</obj_property>
+      <obj_property name="ObjectShortName">w_bank_rd_en[0:3]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fam_detector_top_tb/dut/u_second_stage/w_bank_rd_addr_a" type="array">
+      <obj_property name="ElementShortName">w_bank_rd_addr_a[0:3][9:0]</obj_property>
+      <obj_property name="ObjectShortName">w_bank_rd_addr_a[0:3][9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fam_detector_top_tb/dut/u_second_stage/w_bank_rd_data_a" type="array">
+      <obj_property name="ElementShortName">w_bank_rd_data_a[0:3][31:0]</obj_property>
+      <obj_property name="ObjectShortName">w_bank_rd_data_a[0:3][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fam_detector_top_tb/dut/u_second_stage/w_bank_rd_addr_b" type="array">
+      <obj_property name="ElementShortName">w_bank_rd_addr_b[0:3][9:0]</obj_property>
+      <obj_property name="ObjectShortName">w_bank_rd_addr_b[0:3][9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fam_detector_top_tb/dut/u_second_stage/w_bank_rd_data_b" type="array">
+      <obj_property name="ElementShortName">w_bank_rd_data_b[0:3][31:0]</obj_property>
+      <obj_property name="ObjectShortName">w_bank_rd_data_b[0:3][31:0]</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider372">
+      <obj_property name="label">STREAMER</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fam_detector_top_tb/dut/u_second_stage/u_pair_streamer/r_engine_active" type="array">
+      <obj_property name="ElementShortName">r_engine_active[0:3]</obj_property>
+      <obj_property name="ObjectShortName">r_engine_active[0:3]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fam_detector_top_tb/dut/u_second_stage/u_pair_streamer/r_engine_k" type="array">
+      <obj_property name="ElementShortName">r_engine_k[0:3][6:0]</obj_property>
+      <obj_property name="ObjectShortName">r_engine_k[0:3][6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fam_detector_top_tb/dut/u_second_stage/u_pair_streamer/r_engine_i" type="array">
+      <obj_property name="ElementShortName">r_engine_i[0:3][4:0]</obj_property>
+      <obj_property name="ObjectShortName">r_engine_i[0:3][4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fam_detector_top_tb/dut/u_second_stage/u_pair_streamer/r_engine_j" type="array">
+      <obj_property name="ElementShortName">r_engine_j[0:3][4:0]</obj_property>
+      <obj_property name="ObjectShortName">r_engine_j[0:3][4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fam_detector_top_tb/dut/u_second_stage/u_pair_streamer/r_engine_pair_id" type="array">
+      <obj_property name="ElementShortName">r_engine_pair_id[0:3][8:0]</obj_property>
+      <obj_property name="ObjectShortName">r_engine_pair_id[0:3][8:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fam_detector_top_tb/dut/u_second_stage/u_pair_streamer/r_resp_valid" type="array">
+      <obj_property name="ElementShortName">r_resp_valid[0:3]</obj_property>
+      <obj_property name="ObjectShortName">r_resp_valid[0:3]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fam_detector_top_tb/dut/u_second_stage/u_pair_streamer/r_resp_bank" type="array">
+      <obj_property name="ElementShortName">r_resp_bank[0:3][1:0]</obj_property>
+      <obj_property name="ObjectShortName">r_resp_bank[0:3][1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fam_detector_top_tb/dut/u_second_stage/u_pair_streamer/r_resp_last" type="array">
+      <obj_property name="ElementShortName">r_resp_last[0:3]</obj_property>
+      <obj_property name="ObjectShortName">r_resp_last[0:3]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fam_detector_top_tb/dut/u_second_stage/u_pair_streamer/r_resp_i" type="array">
+      <obj_property name="ElementShortName">r_resp_i[0:3][4:0]</obj_property>
+      <obj_property name="ObjectShortName">r_resp_i[0:3][4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fam_detector_top_tb/dut/u_second_stage/u_pair_streamer/r_resp_j" type="array">
+      <obj_property name="ElementShortName">r_resp_j[0:3][4:0]</obj_property>
+      <obj_property name="ObjectShortName">r_resp_j[0:3][4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fam_detector_top_tb/dut/u_second_stage/u_pair_streamer/r_resp_pair_id" type="array">
+      <obj_property name="ElementShortName">r_resp_pair_id[0:3][8:0]</obj_property>
+      <obj_property name="ObjectShortName">r_resp_pair_id[0:3][8:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fam_detector_top_tb/dut/u_second_stage/u_pair_streamer/w_req_granted" type="array">
+      <obj_property name="ElementShortName">w_req_granted[0:3]</obj_property>
+      <obj_property name="ObjectShortName">w_req_granted[0:3]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fam_detector_top_tb/dut/u_second_stage/u_pair_streamer/w_req_bank" type="array">
+      <obj_property name="ElementShortName">w_req_bank[0:3][1:0]</obj_property>
+      <obj_property name="ObjectShortName">w_req_bank[0:3][1:0]</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider386">
+      <obj_property name="label">CMULT</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fam_detector_top_tb/dut/u_second_stage/w_pair_a_tdata" type="array">
+      <obj_property name="ElementShortName">w_pair_a_tdata[0:3][31:0]</obj_property>
+      <obj_property name="ObjectShortName">w_pair_a_tdata[0:3][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fam_detector_top_tb/dut/u_second_stage/w_pair_b_tdata" type="array">
+      <obj_property name="ElementShortName">w_pair_b_tdata[0:3][31:0]</obj_property>
+      <obj_property name="ObjectShortName">w_pair_b_tdata[0:3][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fam_detector_top_tb/dut/u_second_stage/w_pair_tvalid" type="array">
+      <obj_property name="ElementShortName">w_pair_tvalid[0:3]</obj_property>
+      <obj_property name="ObjectShortName">w_pair_tvalid[0:3]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fam_detector_top_tb/dut/u_second_stage/o_pair_i" type="array">
+      <obj_property name="ElementShortName">o_pair_i[0:3][4:0]</obj_property>
+      <obj_property name="ObjectShortName">o_pair_i[0:3][4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fam_detector_top_tb/dut/u_second_stage/o_pair_j" type="array">
+      <obj_property name="ElementShortName">o_pair_j[0:3][4:0]</obj_property>
+      <obj_property name="ObjectShortName">o_pair_j[0:3][4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fam_detector_top_tb/dut/u_second_stage/o_pair_id" type="array">
+      <obj_property name="ElementShortName">o_pair_id[0:3][8:0]</obj_property>
+      <obj_property name="ObjectShortName">o_pair_id[0:3][8:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fam_detector_top_tb/dut/u_second_stage/o_pair_tlast" type="array">
+      <obj_property name="ElementShortName">o_pair_tlast[0:3]</obj_property>
+      <obj_property name="ObjectShortName">o_pair_tlast[0:3]</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider47">
+      <obj_property name="label">SCD_OUT</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fam_detector_top_tb/dut/u_detection_compare/o_power_tdata" type="array">
+      <obj_property name="ElementShortName">o_power_tdata[0:3][64:0]</obj_property>
+      <obj_property name="ObjectShortName">o_power_tdata[0:3][64:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/fam_detector_top_tb/dut/u_detection_compare/o_power_tdata[0]" type="array">
+         <obj_property name="ElementShortName">[0][64:0]</obj_property>
+         <obj_property name="ObjectShortName">[0][64:0]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">62</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/fam_detector_top_tb/dut/u_detection_compare/o_power_tdata[1]" type="array">
+         <obj_property name="ElementShortName">[1][64:0]</obj_property>
+         <obj_property name="ObjectShortName">[1][64:0]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">62</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/fam_detector_top_tb/dut/u_detection_compare/o_power_tdata[2]" type="array">
+         <obj_property name="ElementShortName">[2][64:0]</obj_property>
+         <obj_property name="ObjectShortName">[2][64:0]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">62</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/fam_detector_top_tb/dut/u_detection_compare/o_power_tdata[3]" type="array">
+         <obj_property name="ElementShortName">[3][64:0]</obj_property>
+         <obj_property name="ObjectShortName">[3][64:0]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">62</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/fam_detector_top_tb/dut/u_detection_compare/o_power_tvalid" type="array">
+      <obj_property name="ElementShortName">o_power_tvalid[0:3]</obj_property>
+      <obj_property name="ObjectShortName">o_power_tvalid[0:3]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fam_detector_top_tb/dut/u_detection_compare/o_power_tlast" type="array">
+      <obj_property name="ElementShortName">o_power_tlast[0:3]</obj_property>
+      <obj_property name="ObjectShortName">o_power_tlast[0:3]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fam_detector_top_tb/N_DESIRED_MAX" type="array">
+      <obj_property name="ElementShortName">N_DESIRED_MAX[31:0]</obj_property>
+      <obj_property name="ObjectShortName">N_DESIRED_MAX[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fam_detector_top_tb/NB_SAMPLE_DATA" type="array">
+      <obj_property name="ElementShortName">NB_SAMPLE_DATA[31:0]</obj_property>
+      <obj_property name="ObjectShortName">NB_SAMPLE_DATA[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fam_detector_top_tb/NBF_SAMPLE_DATA" type="array">
+      <obj_property name="ElementShortName">NBF_SAMPLE_DATA[31:0]</obj_property>
+      <obj_property name="ObjectShortName">NBF_SAMPLE_DATA[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fam_detector_top_tb/NP" type="array">
+      <obj_property name="ElementShortName">NP[31:0]</obj_property>
+      <obj_property name="ObjectShortName">NP[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fam_detector_top_tb/P_MIN" type="array">
+      <obj_property name="ElementShortName">P_MIN[31:0]</obj_property>
+      <obj_property name="ObjectShortName">P_MIN[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fam_detector_top_tb/P_MAX" type="array">
+      <obj_property name="ElementShortName">P_MAX[31:0]</obj_property>
+      <obj_property name="ObjectShortName">P_MAX[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fam_detector_top_tb/N_BANKS" type="array">
+      <obj_property name="ElementShortName">N_BANKS[31:0]</obj_property>
+      <obj_property name="ObjectShortName">N_BANKS[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fam_detector_top_tb/N_ENGINES" type="array">
+      <obj_property name="ElementShortName">N_ENGINES[31:0]</obj_property>
+      <obj_property name="ObjectShortName">N_ENGINES[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fam_detector_top_tb/N_NOISE_SAMPLES_MAX" type="array">
+      <obj_property name="ElementShortName">N_NOISE_SAMPLES_MAX[31:0]</obj_property>
+      <obj_property name="ObjectShortName">N_NOISE_SAMPLES_MAX[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fam_detector_top_tb/NBF_NOISE_DATA" type="array">
+      <obj_property name="ElementShortName">NBF_NOISE_DATA[31:0]</obj_property>
+      <obj_property name="ObjectShortName">NBF_NOISE_DATA[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fam_detector_top_tb/NB_THRESHOLD" type="array">
+      <obj_property name="ElementShortName">NB_THRESHOLD[31:0]</obj_property>
+      <obj_property name="ObjectShortName">NB_THRESHOLD[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fam_detector_top_tb/NBF_THRESHOLD" type="array">
+      <obj_property name="ElementShortName">NBF_THRESHOLD[31:0]</obj_property>
+      <obj_property name="ObjectShortName">NBF_THRESHOLD[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fam_detector_top_tb/NB_WINDOW_COEFF" type="array">
+      <obj_property name="ElementShortName">NB_WINDOW_COEFF[31:0]</obj_property>
+      <obj_property name="ObjectShortName">NB_WINDOW_COEFF[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fam_detector_top_tb/NBF_WINDOW_COEFF" type="array">
+      <obj_property name="ElementShortName">NBF_WINDOW_COEFF[31:0]</obj_property>
+      <obj_property name="ObjectShortName">NBF_WINDOW_COEFF[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fam_detector_top_tb/NB_DETECT" type="array">
+      <obj_property name="ElementShortName">NB_DETECT[31:0]</obj_property>
+      <obj_property name="ObjectShortName">NB_DETECT[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fam_detector_top_tb/TB_DATA_SIZE" type="array">
+      <obj_property name="ElementShortName">TB_DATA_SIZE[31:0]</obj_property>
+      <obj_property name="ObjectShortName">TB_DATA_SIZE[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fam_detector_top_tb/TB_NOISE_SAMPLES" type="array">
+      <obj_property name="ElementShortName">TB_NOISE_SAMPLES[31:0]</obj_property>
+      <obj_property name="ObjectShortName">TB_NOISE_SAMPLES[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fam_detector_top_tb/TB_SIGNAL_SAMPLES" type="array">
+      <obj_property name="ElementShortName">TB_SIGNAL_SAMPLES[31:0]</obj_property>
+      <obj_property name="ObjectShortName">TB_SIGNAL_SAMPLES[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fam_detector_top_tb/L" type="array">
+      <obj_property name="ElementShortName">L[31:0]</obj_property>
+      <obj_property name="ObjectShortName">L[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fam_detector_top_tb/TB_P_FRAMES" type="array">
+      <obj_property name="ElementShortName">TB_P_FRAMES[31:0]</obj_property>
+      <obj_property name="ObjectShortName">TB_P_FRAMES[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fam_detector_top_tb/TB_N_TOT" type="array">
+      <obj_property name="ElementShortName">TB_N_TOT[31:0]</obj_property>
+      <obj_property name="ObjectShortName">TB_N_TOT[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fam_detector_top_tb/SIGNAL_MEM_OFFSET" type="array">
+      <obj_property name="ElementShortName">SIGNAL_MEM_OFFSET[31:0]</obj_property>
+      <obj_property name="ObjectShortName">SIGNAL_MEM_OFFSET[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fam_detector_top_tb/TB_WINDOW_SEL" type="array">
+      <obj_property name="ElementShortName">TB_WINDOW_SEL[1:0]</obj_property>
+      <obj_property name="ObjectShortName">TB_WINDOW_SEL[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fam_detector_top_tb/TB_PFA_VALUE" type="array">
+      <obj_property name="ElementShortName">TB_PFA_VALUE[3:0]</obj_property>
+      <obj_property name="ObjectShortName">TB_PFA_VALUE[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fam_detector_top_tb/TB_SCD_MODE" type="logic">
+      <obj_property name="ElementShortName">TB_SCD_MODE</obj_property>
+      <obj_property name="ObjectShortName">TB_SCD_MODE</obj_property>
+   </wvobject>
+</wave_config>
